@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aboutus</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <script src="jquery-3.6.1.min.js"></script>
+  <script src="dropdownbutton.js"></script>
+  <script src="dropdown.js"></script>
+	<style>
+  body{
+    margin:0;
+    font-family: sans-serif;
+    background-color: #dddddd;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  .container{
+    display: grid;
+    max-width: 1300px;
+    background-color: #ffffff;
+    height:auto;
+    margin:40px auto;
+    padding:20px;
+  }
+  
+  /* @media screen and (max-width: 1300px) and (min-width: 480px){
+  .container {
+    width: 100%; 
+  }
+} */
+
+  h1{
+    font-size:26px;
+    margin:5px;
+  }
+  
+  h3{
+      font-size:22px;
+    margin:5px;  
+  }
+  
+  p{
+    font-size:20px;
+    margin:5px;  
+  }
+
+  .clear{
+    clear: both;
+  }
+  
+  /*header*/
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    
+  }
+  
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: #abcf0c;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #abcf0c;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(199, 194, 194);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .logo img{
+      
+      width: 150px;
+      float: left;
+  }  
+   
+  /* @media screen and (max-width: 1300px) and (min-width: 480px){
+  .navabr .dropdown .dropdown-content {
+    width: 100%; 
+  }
+} */
+  /*Section1*/
+  
+  .section1{
+      float:float;
+      width: 100%;
+      background-color: rgb(233, 229, 229); 
+      text-align: center;
+      padding:10px 15px;
+      margin-bottom:20px;
+     }
+  
+  .section1 .content{
+    float:right;
+    width: 100%;
+  }
+
+  .section1 .content .left{
+    width: 50%;
+    float: left;
+    padding:5px 10px;
+  
+  }
+  .section1 .content .left .card{
+    padding:50px 15px;
+    background-color: rgb(10, 47, 140);
+    font-size:30px;
+    color:rgb(7, 7, 7);
+    text-align: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .section1 .content .right{
+    width: 50%;
+    float: left;
+    padding: 10px 10px;
+  }
+  .section1 .content .right .card{
+    padding:100px 15px;
+    font-size:30px;
+    color:rgb(31, 31, 34);
+    background-color: #ffffff;
+    margin-bottom:20px;
+  }
+  
+  @media screen and (max-width: 1300px) and (min-width: 480px){
+    .section1 .content .left .right .card {
+    width: 100%; 
+  }}
+      /*Section2*/
+  
+      .section2{
+         
+          float:left;
+          width: 100%;
+          background-color:rgb(230, 224, 224); 
+          text-align: center;
+          padding:10px 10px;
+          margin-bottom:20px;
+          
+         }
+  
+      .section2 h1{
+  
+          color:rgb(230, 224, 224);
+      }
+          
+  
+      .section2 .content{
+          float:left;
+          width: 100%;
+          margin-top:10px;
+          text-align: left;
+          
+      }
+      
+      .section2 .content .card{
+          width:30%;
+          float: left;
+          padding:30px 10px;
+      }
+     
+      .section2 .content .card .box{
+          background-color:#abcf0c;
+          font-size:30px;
+          text-align: justify;
+          color:rgb(16, 15, 15);
+          padding:40px 25px;
+          margin-left: 100px;
+      }
+
+  
+      .section2 .content .card .box img{
+          float: left;}
+  
+  
+          @media screen and (max-width: 1300px) and (min-width: 480px) {
+      .section2 .content .card .box {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }} 
+  
+     /*Footer*/
+  
+            footer{
+              float:left;
+              width: 100%;
+              background-color:rgb(10, 47, 140); 
+              text-align: center;
+              padding:20px 30px;
+              text-decoration: none;
+             }
+  
+          .c li{
+          display: inline-block;
+        
+          }
+  
+          .c li a{
+              padding: 10px;
+              color:rgb(230, 224, 224);
+              font-size: 16px;
+              text-decoration: none;
+              padding:10px 10px;
+              }
+  
+           .s {
+              float: right;
+              align: center;
+              list-style: none;
+              margin: 0 auto;
+              }
+              
+          .s li{
+          display: inline-block;
+      }
+          .s li a{
+          text-decoration: none;
+                  }
+
+                    
+       </style>
+      
+</head>
+<body>
+
+    <div class="container">
+
+      <!--header-->  
+  	   <header>
+        <nav>
+          
+          <div class="logo">
+            <img src="image/eeducation.png" href="index.html" alt="ABC Learning Center" title="ABC Learning Center" height="100px" width="100px"></br>
+            </div>
+            
+            <div class="navbar">
+          
+              <a href="registration.html">Register</a>
+              <a href="contactus.html" target="_blank">Contact us</a>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Course Schedule 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="htmlschedule.html" target="_blank">HTML Schedule</a>
+                  <a href="javaschedule.html" target="_blank">Java Schedule</a>
+                </div>
+              </div> 
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Course Details
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-content">
+                  <a href="courselisting.html" target="_blank">Course Listing</a>
+                  <a href="htmldetails.html" target="_blank">HTML Details</a>
+                  <a href="Javadetails.html" target="_blank">Java Details</a>
+                </div>
+              </div>
+              <a href="aboutus.html" target="_blank">About</a>
+              <a href="index.html" target="_blank">Home</a>
+      </nav>
+  	   </header>
+
+       <!--Section1-->
+
+         <section class="section1">
+          <h3>About Us</h3>
+             <div class="content">
+                <div class="left">
+                    <div class="card">                     
+                        <img src="image/webinar.png" alt="schedule" height="250px" width="350px">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="card">
+                        <h3>Who we are?</h3> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat quibusdam maxime odio laborum, facere iusto impedit cum reprehenderit dolore assumenda, error necessitatibus molestias quo vel, aliquid magni hic quisquam.</p>
+                    </div>
+                </div>
+              </div>
+      </section>
+    
+      <!--Section2-->
+
+      <section class="section2">
+        <div class="content">
+          <div class="card">
+            <div class="box">
+                <h3>Mission</h3> 
+                <img src="image/flag.png" alt="schedule" height="80px" width="80px">
+                <p>Description of our Mission.</p>
+            </div>
+         </div>
+           <div class="card">
+               <div class="box">
+                   <h3>Vision</h3> 
+                   <img src="image/lightbulb.png" alt="schedule" height="85px" width="85px">
+                   <p>Description of our vision.</p>
+               </div>
+            </div>
+           <div class="card">
+             <div class="box">
+                 <h3>Values</h3> 
+                 <img src="image/clock.png" alt="schedule" height="80px" width="80px">
+                 <p>Description of our values.</p>
+             </div>
+           </div>
+         </div>
+ </section>
+
+      <!--Footer-->
+
+    <footer>
+         <ul class="c">
+          <li><a href="privacypolicy.html" target="_blank">PrivacyPolicy</a></li>
+          <li><a href="sitemap.html" target="_blank">Sitemap</a></li>
+           </ul> 
+        
+         <div class="social">
+            <ul class="s">
+                <li><a href="#"><img src="image/facebook.png" alt="" height="30px" width="30px"></a></li>
+                <li><a href="#"><img src="image/Instagram.png" alt="" height="30px" width="30px"></a></li>
+                <li><a href="#"><img src="image/Twitter.png" alt="" height="30px" width="30px"></a></li>
+            </ul>
+
+         </div>
+    </footer>
+      <div class="clear"> 
+      </div>
+      
+</div>
+
+</body>
+</html>

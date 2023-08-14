@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>administration</title>
+	<style>
+        body{
+	margin:0;
+	font-family: sans-serif;
+	background-color: #dddddd;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1300px;
+	background-color: #ffffff;
+	height:auto;
+	margin:40px auto;
+	padding:20px;
+}
+
+h1{
+    font-size:26px;
+    margin:5px;
+  }
+  
+  h3{
+      font-size:22px;
+    margin:5px;  
+  }
+  
+  p{
+    font-size:20px;
+    margin:5px;  
+  }
+
+.clear{
+	clear: both;
+}
+
+/*header*/
+
+
+  .navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    
+  }
+  
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: #abcf0c;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #abcf0c;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(199, 194, 194);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .logo img{
+      
+      width: 150px;
+      float: left;
+  }  
+
+/*section*/
+
+.section1{
+    float:left;
+    width: 100%;
+    background-color:rgb(233, 229, 229); 
+    text-align: center;
+    padding:30px 15px;
+    margin-bottom:20px;
+   }
+
+   .section1 .content{
+	float:right;
+	width: 100%;
+   }
+
+.section1 .content .card{
+	width: 100%;
+	float: left;
+    background-color: rgb(233, 229, 229);
+	padding:20px 10px;
+    
+    
+    text-align: ccenter;
+
+}
+
+.section1 .content .card .box{
+	width: 30%;
+	float: left;
+    background-color:  rgb(10, 47, 140);
+    color: #ffffff;
+	padding:20px 10px;
+    margin-left: 420px;
+    text-align: center;
+
+}
+
+    .section2{
+    float:left;
+    width: 100%;
+    background-color:#abcf0c; 
+    text-align: center;
+    padding:30px 15px;
+    margin-bottom:20px;
+   }
+
+   .section2 .content{
+	float:right;
+	width: 100%;
+   }
+
+.section2 .content .card{
+	width: 100%;
+	float: left;
+    background-color: #abcf0c;
+	padding:20px 10px;
+    
+    
+    text-align: ccenter;
+
+}
+
+.section2 .content .card .box{
+	width: 30%;
+	float: left;
+    background-color: rgb(233, 229, 229);
+	padding:20px 10px;
+    margin-left: 450px;
+    text-align: center;
+
+}
+
+/*footer*/
+
+   footer{
+            float:left;
+            width: 100%;
+            background-color:rgb(10, 47, 140); 
+            text-align: center;
+            padding:20px 30px;
+            text-decoration: none;
+           }
+
+        .c li{
+        display: inline-block;
+      
+        }
+
+        .c li a{
+            padding: 10px;
+            color:rgb(230, 224, 224);
+            font-size: 16px;
+            text-decoration: none;
+            padding:10px 10px;
+            }
+
+         .s {
+            float: right;
+            align: center;
+            list-style: none;
+            margin: 0 auto;
+            }
+            
+        .s li{
+        display: inline-block;
+    }
+        .s li a{
+        text-decoration: none;
+        }
+    </style>
+    <script src="dropdown.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+      <!--header-->  
+  	   <header>
+        <nav>
+          
+            <div class="logo">
+              <img src="image/eeducation.png" href="index.html" alt="ABC Learning Center" title="ABC Learning Center" height="100px" width="100px"></br>
+              </div>
+              
+              <div class="navbar">
+            
+                <a href="#">Register</a>
+                <a href="contactus.html">Contact us</a>
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Course Schedule 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="htmlschedule.html">HTML Schedule</a>
+                    <a href="javaschedule.html">Java Schedule</a>
+                  </div>
+                </div> 
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Course Details
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                  <div class="dropdown-content">
+                    <a href="courselisting.html">Course Listing</a>
+                    <a href="htmldetails.html">HTML Details</a>
+                    <a href="Javadetails.html">Java Details</a>
+                  </div>
+                </div>
+                <a href="aboutus.html">About</a>
+                <a href="index.html">Home</a>
+        </nav>
+  	   </header>
+
+<!--Section1--> 
+
+<section class="section1"> 
+  <h3>Please Insert Data Here</h3>
+  <div class="content">
+      <div class="card">
+          <div class="box">
+  <form id="form" action="">
+      <label for="username">Name:</label><br>
+      <input type="text" id="username" placeholder="username" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" name="" id="email" placeholder="email" required><br><br>
+      <label for="phone">Phone number:</label><br>
+      <input type="text" id="phone" placeholder="phone number" required><br><br>
+      <label for="qualify">Qualification:</label><br>
+      <input name="" type="text" name="" id="qualify" placeholder="Graduation" required><br><br>
+      <label for="course">Selected Course</label><br>
+      <select name="" id="course" required>
+        <option value="java">Java</option>
+        <option value="HTML">HTML</option>
+        <option value="Microsoft Office">Microsoft Office</option>
+        <option value=".Net">.Net</option>
+      </select><br><br>
+      <button type="submit" onclick="save()">Submit</button>
+      <script src="registration1.js"></script> 
+    </form> 
+  </div> 
+</div>
+</div>
+
+</section>
+
+<!--Section2-->
+
+         <section class="section2"> 
+            
+        <h3>Collected Lead Data</h3>
+        <div id="data">data</div>
+        <!-- <button onclick="remove()">Delete</button> -->
+        
+        </section>
+
+        <!--Footer-->
+  
+      <footer>
+           <ul class="c">
+              <li><a href="privacypolicy.html">PrivacyPolicy</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+             </ul> 
+          
+           <div class="social">
+              <ul class="s">
+                  <li><a href="#"><img src="image/facebook.png" alt="" height="30px" width="30px"></a></li>
+                  <li><a href="#"><img src="image/Instagram.png" alt="" height="30px" width="30px"></a></li>
+                  <li><a href="#"><img src="image/Twitter.png" alt="" height="30px" width="30px"></a></li>
+              </ul>
+  
+           </div>
+      </footer>
+        <div class="clear"> 
+        </div>
+        
+  </div>
+  <script src="admin.js"></script>
+  </body>
+  </html>
